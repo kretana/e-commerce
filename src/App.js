@@ -4,7 +4,7 @@ import '../src/App.css';
 import Homepage from './pages/homepage/homepage.component';
 import ShopPage from './shop/shop.component';
 
-
+import Header from '../src/components/header/header.component';
 
 
 
@@ -13,6 +13,7 @@ import ShopPage from './shop/shop.component';
 function App() {
   return (
     <div>
+      <Header />
       <Switch>
         <Route exact path='/' component={Homepage} /> 
        <Route path='/shop' component={ShopPage} /> 

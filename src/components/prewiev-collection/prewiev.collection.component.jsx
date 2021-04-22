@@ -7,9 +7,9 @@ const PrewievCollection = ({title,items}) =>(
     <h1 className="title">{title.toUpperCase()}</h1>
     <div className="preview">
         {
-            items.filter(( _item,indx)=>indx<4)
-            .map(({id, ...otherItemProps}) =>(
-                <CollectionItem key={id} {...otherItemProps} />
+            items.filter(( item,indx)=>indx<4)
+            .map(({id,name,price,imageUrl}) =>(
+                <CollectionItem key={id} name={name} price={price} imageUrl={imageUrl} />
             ))}
     </div>
 </div>
